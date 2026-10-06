@@ -1,0 +1,21 @@
+[project]
+name = "mazegen"
+version = "1.0.0"
+description = "Maze generator module"
+authors = [
+  { name = "adfernan", email = "adfernan@student.42lehavre.fr" },
+  { name = "tbaricau", email = "tbaricau@student.42lehavre.fr" }
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "mypy",
+    "build",
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["mazegen*"]
+exclude = ["resources*", "tests*"]
